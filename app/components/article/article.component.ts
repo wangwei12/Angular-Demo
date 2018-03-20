@@ -1,5 +1,5 @@
 import { Component, OnInit ,Input,EventEmitter,Output } from '@angular/core';
-
+import {GetdataService} from '../../services/getdata.service'
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
@@ -7,14 +7,16 @@ import { Component, OnInit ,Input,EventEmitter,Output } from '@angular/core';
 })
 export class ArticleComponent implements OnInit {
   item='';
-  constructor() { }
+  constructor(private getdata:GetdataService) { }
   @Input() listart
   ngOnInit() {
+    
   }
   add(e){
    if(e.keyCode == 13){
     this.listart.push(this.item);
-    this.item="";
+    this.getdata.setdata(this.item);
+    this.item='';
    }
   }
 

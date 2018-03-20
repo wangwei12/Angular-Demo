@@ -9,6 +9,7 @@ import { GoodslistComponent } from './components/goodslist/goodslist.component';
 import { VoterComponent } from './components/voter/voter.component';
 import { ArticleComponent } from './components/article/article.component';
 import { ContentComponent } from './components/content/content.component';
+import { GetdataService } from './services/getdata.service';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { ContentComponent } from './components/content/content.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [GetdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
