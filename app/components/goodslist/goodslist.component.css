@@ -5,7 +5,15 @@ li{
     width: 40%;
     font-size: 30px;
     float: left;
-    margin: 5%;
-    height: 100px;
-    background: rgb(25, 214, 34);
+    margin: 2%;
+    height: 150px;
+    
+}
+li img{
+    width: 160px;
+    height: 220px;
+}
+li p{
+    width: 20px;
+    height: 10px;
 }

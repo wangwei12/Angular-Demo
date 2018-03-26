@@ -14,7 +14,7 @@ export class ContentComponent implements OnInit {
   @Input() list
           
   ngOnInit() {
-    this.getdata.get(this.list);
+    this.getdata.get('doing',this.list);
   }
   ngDoCheck() {
     //Called every time that the input properties of a component or a directive are checked. Use it to extend change detection by performing a custom check.
@@ -24,7 +24,7 @@ export class ContentComponent implements OnInit {
   }
   deleing(i){
     this.list.splice(i,1);
-    this.getdata.deledata(i);
+    this.getdata.deledata('doing');
   }
   changeItem(i){
     this.listDone.push(this.list[i]);

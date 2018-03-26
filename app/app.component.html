@@ -89,8 +89,13 @@
   <p *ngSwitchCase="2">选中2</p>
   <p *ngSwitchCase="3">选中3</p>
 </div> -->
-<app-article [listart]="items"> </app-article>
-<app-content [list]="items" ></app-content>
+<!-- <app-article [listart]="items"> </app-article>
+<app-content [list]="items" ></app-content> -->
+<!-- <app-no-page></app-no-page> -->
+<router-outlet></router-outlet>
+<a routerLink="/article/100/200">article</a>
+<a routerLink="/content" >content</a>
+<a routerLink="/goodslist" [queryParams]='{qq: 1, name: 2, state: 3}'>goodslist</a>
 
 </div> 
 

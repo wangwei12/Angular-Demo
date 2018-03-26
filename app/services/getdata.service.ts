@@ -6,25 +6,27 @@ export class GetdataService {
 
   constructor() { }
 
-  setdata(li){
+  setdata(key,li){
     index.push(li);
     console.log(li,index);
     
-    window.localStorage.setItem('key',JSON.stringify(index));
+    window.localStorage.setItem(key,JSON.stringify(index));
 
     
   }
 
-  get(li){
+  get(key,li){
 
-    var k=window.localStorage.getItem('key');
+    var k=window.localStorage.getItem(key);
     for(i=0;i<JSON.parse(k).length;i++){
         li.push(JSON.parse(k)[i]);
     }
 
   }
 
-  deledata(i){
-    window.localStorage.removeItem("key");
+  deledata(key){
+
+    window.localStorage.removeItem(key);
+    
   }
 }

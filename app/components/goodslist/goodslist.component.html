@@ -1,5 +1,14 @@
-<ul>
-  <li *ngFor="let item of list">
-    {{item}}
-  </li>
-</ul>
+
+<div id="goodlist">
+  <ul id="goodul">	
+      <li *ngFor="let images of listsimg;let titles of liststitle;let i=index;">
+          <!-- <a [routerLink]="['/goodsdetail',i]">
+            {{item}}
+          </a> -->
+          <img src="{{images}}" alt="">
+
+          <!-- <p>{{titles}}</p> -->
+      </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
