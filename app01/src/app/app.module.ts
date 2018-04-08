@@ -12,6 +12,7 @@ import { HelloPage } from '../pages/hello/hello';
 import { SubpagePage } from '../pages/subpage/subpage';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ListComponent } from '../components/list/list';
 @NgModule({
   declarations: [
     MyApp,
@@ -21,10 +22,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PersonPage,
     SubpagePage,
     TabsPage,
-    HelloPage
+    HelloPage,
+    ListComponent
   ],
   imports: [
     BrowserModule,
+   
     HttpModule ,JsonpModule,
     IonicModule.forRoot(MyApp,{
       tabsHideOnSubPages:true,
