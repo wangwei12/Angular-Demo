@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { TabsPage } from '../tabs/tabs';
+import { ChangepwdPage } from '../changepwd/changepwd';
 
 /**
  * Generated class for the HelloPage page.
@@ -18,8 +21,19 @@ export class HelloPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad HelloPage');
   }
 
+  go(){
+    this.navCtrl.push(TabsPage,{
+
+    })
+  }
+  goChangepwd(){
+    this.navCtrl.push(ChangepwdPage)
+  }
 }
+

@@ -25,12 +25,17 @@
   
   <div>
     <ion-segment [(ngModel)]="icons" color="yellow">
-        <ion-segment-button value="information">
-          找信息
-        </ion-segment-button>
-        <ion-segment-button value="service">
-          找服务
-        </ion-segment-button>
+      
+          <ion-segment-button value="information">
+              找信息
+            </ion-segment-button>
+      
+    
+            <ion-segment-button value="service">
+                找服务
+              </ion-segment-button>
+
+        
       </ion-segment>
   </div>
   <div [ngSwitch]="icons" class="icons">

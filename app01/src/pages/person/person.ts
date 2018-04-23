@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the PersonPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { SubpagePage } from '../../pages/subpage/subpage'
 @IonicPage()
 @Component({
   selector: 'page-person',
@@ -19,7 +12,9 @@ export class PersonPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PersonPage');
-  }
 
+  }
+  openNavDetailsPage2(){
+    this.navCtrl.push(SubpagePage);
+  }
 }

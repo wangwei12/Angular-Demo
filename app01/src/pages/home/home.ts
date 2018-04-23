@@ -36,7 +36,7 @@ export class HomePage {
   {region:'上海',sorce:'银行',type:'个人',url:'../../assets/imgs/images/list04.png',price:'700万'}]
   isAndroid :boolean=true
   ionViewDidLoad(){
-    console.log(this.items[0]);
+
     
   }
   goSub(){
